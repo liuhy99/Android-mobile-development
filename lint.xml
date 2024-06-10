@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/example/myapp2/MainPageActivity.java" />
+    </issue>
+    <issue id="HardcodedText" severity="ignore">
+        <ignore path="res/layout/activity_main.xml" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/com/example/myapp2/Fragment/ShowInfoFragment.java" />
+        <ignore path="src/com/example/myapp2/MainPageActivity.java" />
+    </issue>
+    <issue id="SpUsage" severity="ignore" />
+</lint>

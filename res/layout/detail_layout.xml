@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/niupi">
+
+    <RelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_centerVertical="true"
+            android:id="@+id/search_edt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_centerVertical="true"
+            android:id="@+id/search_bt"
+            android:layout_toRightOf="@+id/search_edt"
+            android:text="查询"
+            android:background="#FFFFE0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lay3"
+        android:layout_below="@+id/lay1">
+
+       <ListView
+           android:id="@+id/info_listView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"></ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/lay3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <Button
+
+            android:text="返回"
+            android:id="@+id/back_bt"
+            android:background="#FFFFE0"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/score_bt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/back_bt"
+            android:layout_alignBottom="@+id/back_bt"
+            android:layout_alignParentRight="true"
+            android:background="#FFFFE0"
+            android:text="去评分" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/niupi">
+
+    <ScrollView
+        android:id="@+id/scrView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lay1"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务条款"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTitle"
+                android:text="
+欢迎使用本软件。请仔细阅读以下全部内容。未成年人则应在监护人陪同下阅读。如用户使用网易云音乐软件或服务，即表示用户与网易公司已达成协议，自愿接受本服务条款所有内容。\n
+1、服务条款的确认和接纳\n
+本条款是用户与公司之间关于用户使本软件或服务的条款，如果用户不接受条款，用户可以选择终止使用本软件或服务。\n
+用户在使本服务时填写、登录、使用的帐号信息资料应遵守法律法规、社会主义制度、国家利益、公民合法权益、公共秩序、社会道德风尚和信息真实性等七条底线，不得在帐号信息资料中出现违法和不良信息，且用户保证在填写、登录、使用帐号信息资料时，不得有以下情形\n
+(1)违反宪法或法律法规规定的；\n
+(2)危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；\n
+(3)损害国家荣誉和利益的，损害公共利益的；\n
+(4)煽动民族仇恨、民族歧视，破坏民族团结的；\n
+(5)破坏国家宗教政策，宣扬邪教和封建迷信的；\n
+(6)散布谣言，扰乱社会秩序，破坏社会稳定的；\n
+(7)散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；\n
+(8)侮辱或者诽谤他人，侵害他人合法权益的\n
+(9)含有法律、行政法规禁止的其他内容的\n
+若用户存在违法和不良信息的，本公司有权采取通知限期改正、暂停使用等措施。\n
+2、不可抗力条素\n
+对不可抗力导致的损失不承担责任。本服务条款所指不可抗力包括:天灾、法律法规或政府指令的变更，因网络服务特性而特有的原因，例如境内外基础电信运营商的故障、计算机或互联网相关技术缺陷、互联网覆盖范围限制、计算机病毒、黑客攻击等因素，及其他合法范围内的丕能预见、不能避免并不能克服的客观情况。\n
+3、禁止服务的商业化\n
+用户承诺，非经同意，用户不能利用本软件或服务进行销售或其他商业用途。如用户有需要将软件或服务用于商业用途，应书面通知开发者的明确授权。\n
+4、用户承诺:\n
+(1)用户在使用软件或服务时必须符合中国有关法规，不得制作、复制、发布、传播法律、行政法规禁止的信息。\n
+(2)对软件进行反向工程、反向汇编、反向编译或以其他方式自网易云音乐软件获取源代码等;\n
+(3)其他以任何不合法的方式、为任何不合法的目的、或以任何与本条款不一致的方式使软件和服务。\n
+(4)用户不得滥用软件或服务，包括但不限于利用软件或服务进行侵害他人知识产权或者合法利益的其他行为。\n"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/agree_bt"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFE0"
+            android:text="同意" />
+        <Button
+            android:id="@+id/reject_bt"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/agree_bt"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFE0"
+            android:text="拒绝" />
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

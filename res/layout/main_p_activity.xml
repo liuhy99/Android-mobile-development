@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj2">
+
+    <RelativeLayout
+        android:id="@+id/seeContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playImg"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/c_text"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seekbar_p"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/c_text" />
+
+        <TextView
+            android:id="@+id/d_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/seekbar_p" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekbar_p"
+            android:layout_alignLeft="@+id/seekbar_p">
+
+            <SeekBar
+                android:id="@+id/seekbar_v"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="30dp"
+                android:max="10" />
+
+            <ImageView
+                android:id="@+id/volumeImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/seekbar_v"
+                android:src="@drawable/img_volume" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/seeContent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/v_img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/four" />
+
+                <TextView
+                    android:text="四学院"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/v_txt1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ff0000"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+			<RelativeLayout
+    			android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/v_img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/chuf" />
+                <TextView
+                    android:text="厨房"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/v_txt2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#00bfff"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"/>
+
+                
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/v_img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book"
+                     />
+                <TextView
+                    android:text="图书馆"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/v_txt3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#77ff00"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+           
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="90dp"
+            android:layout_width="match_parent"
+			android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/v_img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/qiuchang"
+                     />
+                <TextView
+                    android:text="魁地奇球场"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/v_txt4"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ffff00"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/v_img5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/azi" />
+                <TextView
+                    android:text="阿兹卡班"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/v_txt5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/v_img6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:src="@drawable/wu"
+                    />
+                <TextView
+                    android:text="有求必应屋"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/v_txt6"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#7fffd4"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/playImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/img_pause" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seeContent"
+        android:text="留言板" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seeContent"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/button1"
+        android:text="活点地图" />
+   
+</RelativeLayout>
